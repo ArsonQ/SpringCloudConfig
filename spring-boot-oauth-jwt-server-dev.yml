@@ -5,7 +5,7 @@ spring:
       url: jdbc:mysql://127.0.0.1:3306/athena?serverTimezone=UTC&characterEncoding=utf-8
       username: root
       password: '{cipher}AQCBDuRvs2hqY/VF1IH6pR6bgbfdxSsUMi16XijtnHXaZgWSjoIidoc7/02jYVNPsYKG1dQML3G/SGA6BWxlQgQIeFsGPzv1mMGNEuplv/PPVJPccsw6qxf1DOs/VIi49hwtAn4p4Vvws4vT5Q3rnDiRL/ajnIiJAS4ovgX5HK3lAw3vOx0D/CodeWXrZuAR3Zsdkq+yn00IpW5o+qMDRLNZqAdkJFPoOWvTsOExzK87ELmdh+ktXB1+x3sAVB+dfjgORWK/LsxFP0t4WeQYhIeuXcy9jXoCV9Wuy5vOXSmtx15tVQ3u8Qxsch5B8UMzyFXbfmFTTrZygO0Qqsv9eMXvV3GpFTrJwFBYnrdWnBcMUMKBiJSP5/hH4orqUCpI+1E='
-      driver-class-name: com.mysql.jdbc.Driver
+      driver-class-name: com.mysql.cj.jdbc.Driver
       
       #sqlserver
       #url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=athena
