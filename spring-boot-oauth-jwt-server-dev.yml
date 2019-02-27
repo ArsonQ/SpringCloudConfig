@@ -2,7 +2,7 @@ spring:
   datasource:
     druid:
       #mysql
-      url: jdbc:mysql://127.0.0.1:3306/athena
+      url: jdbc:mysql://127.0.0.1:3306/athena?serverTimezone=UTC&characterEncoding=utf-8
       username: root
       password: mysqlroot
       driver-class-name: com.mysql.jdbc.Driver
