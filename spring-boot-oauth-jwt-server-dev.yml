@@ -29,8 +29,8 @@ spring:
       test-on-return: false
       test-while-idle: true
       time-between-eviction-runs-millis: 2000
-      min-evictable-idle-time-millis: 600000
       max-evictable-idle-time-millis: 900000
+      min-evictable-idle-time-millis: 600000
       filters: stat,wall,web-stat,stat-view-servlet,slf4j #配置多个英文逗号分隔
 
       #StatFilter配置，说明请参考Druid Wiki，配置_配置StatFilter
