@@ -1,0 +1,58 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=athena
+      username: root
+      password: mysqlroot
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      initial-size: 5
+      max-active: 20
+      min-idle: 10
+      max-wait: 6000
+      pool-prepared-statements: true
+      validation-query: select 1
+      validation-query-timeout:
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      time-between-eviction-runs-millis: 2000
+      min-evictable-idle-time-millis: 600000
+      max-evictable-idle-time-millis: 900000
+      filters: stat,wall,web-stat,stat-view-servlet,slf4j #配置多个英文逗号分隔
+
+      #StatFilter配置，说明请参考Druid Wiki，配置_配置StatFilter
+      stat.enabled: true
+      stat.slowSqlMillis: 10000
+      stat.logSlowSql: true
+      stat.mergeSql: true
+
+      # Wallfilter配置，使用缺省配置，说明请参考Druid Wiki，配置_配置Wallfilter
+      wall.logViolation: true
+      wall.throwException: false
+
+      # log4jStatFilter配置
+      slf4j.enabled: true
+      slf4j.statement-create-after-log-enabled: false
+      slf4j.statement-close-after-log-enabled: false
+      slf4j.result-set-open-after-log-enabled: false
+      slf4j.result-set-close-after-log-enabled: false
+
+      # WebStatFilter配置，说明请参考Druid Wiki，配置_配置WebStatFilter
+      web-stat-filter.enabled: true #是否启用StatFilter默认值false
+      web-stat-filter.url-pattern: /*
+      web-stat-filter.exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+      web-stat-filter.profile-enable: true
+
+      #考Druid Wiki，配置_StatViewServlet配置
+      stat-view-servlet.enabled: true #是否启用StatViewServlet（监控页面）默认值为false（考虑到安全问题默认并未启动，如需启用建议设置密码或白名单以保障安全）
+      stat-view-servlet.url-pattern: /druid/*
+      stat-view-servlet.reset-enable: false
+      stat-view-servlet.login-username: athena
+      stat-view-servlet.login-password: Athena123
+      #stat-view-servlet.allow:   #配置白名单
+      #stat-view-servlet.deny:    #配置黑名单
+
+
+#mybatis 配置 entity扫描位置
+mybatis:
+  typeAliasesPackage: com.athena.springboot.oauth.jwt.server.*
