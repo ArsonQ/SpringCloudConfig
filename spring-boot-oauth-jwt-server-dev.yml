@@ -61,7 +61,7 @@ spring:
       stat-view-servlet.url-pattern: /druid/*
       stat-view-servlet.reset-enable: false
       stat-view-servlet.login-username: athena
-      stat-view-servlet.login-password: Athena123
+      stat-view-servlet.login-password: '{cipher}AQBVBUtzwPPUz2yN6MW7IEDkJNkdGA/B3/9kxtUYFyqqur4yo8M7MxUFuPCsD7PYzJorNcgBzJaWeafOWoMnr6rBw5yspDIk8FFt2Wspdthexikc8TDnJlyJlfd0d6NWtMKBYF5YnFqu7LVROfmMd+Xg1NMWit/fe4AzXpLweSEBPrQvRyy9zcFdbC1jLajMpUXakkgJ+Va/mxMC2uQ0w+Tez6xPT7PayLUO8ODBIIgYX4XHTZC7U12Vz2c9i7VT/6YTbmALdAJwk7yE4tdcGgtOU7jH2eiC8VcryggNTv8Hfjsyva8+lIO1gkeg0cx8jGqMtooLEJ4UGckVC5FA/F+/GOMkZNAVz1u9fF7wPx2cgsmfVOBd+x59F+/P4eD5Kk8='
       #stat-view-servlet.allow:   #配置白名单
       #stat-view-servlet.deny:    #配置黑名单
 
