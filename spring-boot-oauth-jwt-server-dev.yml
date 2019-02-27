@@ -5,7 +5,7 @@ spring:
       url: jdbc:mysql://127.0.0.1:3306/athena?serverTimezone=UTC&characterEncoding=utf-8
       username: root
       password: mysqlroot
-      driver-class-name: com.mysql.cj.jdbc.Driver
+      driver-class-name: com.mysql.jdbc.Driver
       
       #sqlserver
       #url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=athena
@@ -61,7 +61,7 @@ spring:
       stat-view-servlet.url-pattern: /druid/*
       stat-view-servlet.reset-enable: false
       stat-view-servlet.login-username: athena
-      stat-view-servlet.login-password: athena123
+      stat-view-servlet.login-password: Athena123
       #stat-view-servlet.allow:   #配置白名单
       #stat-view-servlet.deny:    #配置黑名单
 
