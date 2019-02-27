@@ -4,7 +4,7 @@ spring:
       #mysql
       url: jdbc:mysql://127.0.0.1:3306/athena?serverTimezone=UTC&characterEncoding=utf-8
       username: root
-      password: {cipher}AQABPLuoeIUiKrVEHa83iaExrzjv6FEyRnGVhYIf814WUU8UjzpoVlP0XHLM1G5tvgmnGgl69lgo/uqVlL+DOV0BP89cKo6bx7y2NOiLGrXiHdfnwx5Wm50SCSDLUabni5KLas6Hcab2W/pacqsTUHMogp8ppISYWBgq1QYwZmF7K8nHbjl5jdfokQ/g8OG5Oh33IhvcXiAQbQojkJqh/xeoj6A1jlej9IOR/1ZwzOwIErA3QosBYYU3clG9TnsiPhp+ROT+YmNhThYbcFieeTJScI+mK+q42TTlQPDXBaxn4nGA8cNIC5zPpAX1RG7KnNBWqtLkYjjhWMh9A9wZAnPQd94LbD5CQHw+uNzKX8zp/E1xtKJpEToBL4xpRWOMtDo=
+      password: mysqlroot
       driver-class-name: com.mysql.cj.jdbc.Driver
       
       #sqlserver
@@ -61,7 +61,7 @@ spring:
       stat-view-servlet.url-pattern: /druid/*
       stat-view-servlet.reset-enable: false
       stat-view-servlet.login-username: athena
-      stat-view-servlet.login-password: Athena123
+      stat-view-servlet.login-password: athena123
       #stat-view-servlet.allow:   #配置白名单
       #stat-view-servlet.deny:    #配置黑名单
 
