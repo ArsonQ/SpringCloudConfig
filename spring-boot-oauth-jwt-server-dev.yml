@@ -11,7 +11,7 @@ spring:
       max-wait: 6000
       pool-prepared-statements: true
       validation-query: select 1
-      validation-query-timeout:
+      #validation-query-timeout:
       test-on-borrow: false
       test-on-return: false
       test-while-idle: true
