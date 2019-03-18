@@ -29,7 +29,6 @@ spring:
       test-on-return: false
       test-while-idle: true
       time-between-eviction-runs-millis: 2000
-      max-evictable-idle-time-millis: 900000
       min-evictable-idle-time-millis: 600000
       filters: stat,wall,web-stat,stat-view-servlet,slf4j #配置多个英文逗号分隔
 
